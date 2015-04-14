@@ -181,7 +181,7 @@
 			data.barWidth = data.$content[0].offsetWidth - data.$content[0].clientWidth;
 			data.frameHeight = data.$content.outerHeight();
 			data.trackHeight = data.frameHeight - (data.trackMargin * 2);
-			data.scrollHeight = data.$content[0].scrollHeight;
+			data.scrollHeight = data.$content[0].scrollHeight - 5;
 			data.ratio = data.trackHeight / data.scrollHeight;
 			data.trackRatio = data.trackHeight / data.scrollHeight;
 			data.handleHeight = (data.handleSize > 0) ? data.handleSize : data.trackHeight * data.trackRatio;
